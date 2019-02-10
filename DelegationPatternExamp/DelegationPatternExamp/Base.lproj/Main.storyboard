@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="DelegationPatternExamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAR CHOSER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPh-eb-Uiu">
+                                <rect key="frame" x="16" y="45" width="343" height="67"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="51"/>
+                                <color key="textColor" red="0.80784313730000001" green="0.062745098040000002" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-ae-EtG">
+                                <rect key="frame" x="100" y="588" width="175" height="39"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <state key="normal" title="Choose brand">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choseBrandButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7il-3E-VJ5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dro-Tb-2LQ">
+                                <rect key="frame" x="16" y="210" width="343" height="247"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="uPh-eb-Uiu" firstAttribute="trailing" secondItem="Dro-Tb-2LQ" secondAttribute="trailing" id="4am-1l-Y8u"/>
+                            <constraint firstItem="Dro-Tb-2LQ" firstAttribute="top" secondItem="uPh-eb-Uiu" secondAttribute="bottom" constant="98" id="4h0-dp-zKB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AMp-ae-EtG" secondAttribute="trailing" constant="100" id="DjA-3k-4aO"/>
+                            <constraint firstItem="Dro-Tb-2LQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ivx-xa-2gb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dro-Tb-2LQ" secondAttribute="trailing" constant="16" id="PdC-Sf-gHA"/>
+                            <constraint firstItem="AMp-ae-EtG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Txl-y4-dxY"/>
+                            <constraint firstItem="AMp-ae-EtG" firstAttribute="top" secondItem="Dro-Tb-2LQ" secondAttribute="bottom" constant="131" id="Vjb-IB-pIf"/>
+                            <constraint firstItem="uPh-eb-Uiu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="a75-Pl-v2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AMp-ae-EtG" secondAttribute="bottom" constant="40" id="b5c-vv-JF0"/>
+                            <constraint firstItem="uPh-eb-Uiu" firstAttribute="leading" secondItem="Dro-Tb-2LQ" secondAttribute="leading" id="xMB-Nj-DiJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseBrandBtn" destination="AMp-ae-EtG" id="Gxz-7C-kvC"/>
+                        <outlet property="mainImage" destination="Dro-Tb-2LQ" id="gKS-Sf-3F5"/>
+                        <outlet property="nameLabel" destination="uPh-eb-Uiu" id="9Yh-9t-DVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490.39999999999998" y="73.313343328335833"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="AV8-5N-bPx">
+            <objects>
+                <viewController storyboardIdentifier="secondViewController" id="L5G-kh-n5Q" customClass="SecondViewController" customModule="DelegationPatternExamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gt0-q5-eVt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your favorite car brand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="318-Lg-j6f">
+                                <rect key="frame" x="20" y="70" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bwd-70-HDp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" red="0.80784313730000001" green="0.062745098040000002" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owq-xL-mXg">
+                                <rect key="frame" x="130" y="208" width="115" height="104"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="40O-V2-9GJ"/>
+                                    <constraint firstAttribute="height" constant="104" id="cBv-gc-9yT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bmw_logo"/>
+                                <connections>
+                                    <action selector="bmwButtonTapped:" destination="L5G-kh-n5Q" eventType="touchUpInside" id="Pw5-Xl-Zp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcN-1i-x4l">
+                                <rect key="frame" x="85" y="395" width="200" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="mhn-yN-HkC"/>
+                                    <constraint firstAttribute="height" constant="115" id="t00-eq-Yvm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mercedes_benz_logo"/>
+                                <connections>
+                                    <action selector="mercedesButtonTapped:" destination="L5G-kh-n5Q" eventType="touchUpInside" id="cg5-LJ-cdX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="owq-xL-mXg" firstAttribute="leading" secondItem="zng-oT-vJa" secondAttribute="leading" constant="130" id="493-8R-8Hc"/>
+                            <constraint firstItem="owq-xL-mXg" firstAttribute="top" secondItem="318-Lg-j6f" secondAttribute="bottom" constant="88" id="4ol-et-Uvy"/>
+                            <constraint firstItem="WcN-1i-x4l" firstAttribute="leading" secondItem="zng-oT-vJa" secondAttribute="leading" constant="85" id="I3o-9e-yRP"/>
+                            <constraint firstItem="zng-oT-vJa" firstAttribute="trailing" secondItem="318-Lg-j6f" secondAttribute="trailing" constant="20" id="PLn-e1-5Cx"/>
+                            <constraint firstItem="WcN-1i-x4l" firstAttribute="top" secondItem="owq-xL-mXg" secondAttribute="bottom" constant="83" id="U4q-sm-N3x"/>
+                            <constraint firstItem="318-Lg-j6f" firstAttribute="leading" secondItem="zng-oT-vJa" secondAttribute="leading" constant="20" id="jd2-8v-srj"/>
+                            <constraint firstItem="318-Lg-j6f" firstAttribute="top" secondItem="zng-oT-vJa" secondAttribute="top" constant="50" id="zNe-C4-WoH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zng-oT-vJa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaY-dO-UaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJL-pa-hYs">
+                    <rect key="frame" x="0.0" y="0.0" width="226" height="129"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3Hs-oq-LLE"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="mercedes_benz_logo"/>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bmw_logo" width="768" height="768"/>
+        <image name="mercedes_benz_logo" width="1920" height="1080"/>
+    </resources>
+</document>
